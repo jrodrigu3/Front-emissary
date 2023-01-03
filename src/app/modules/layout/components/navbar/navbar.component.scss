@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #ffff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 73px;
+    background-image: url(../../../../../assets/icon/profile_Icon.jpg);
+}

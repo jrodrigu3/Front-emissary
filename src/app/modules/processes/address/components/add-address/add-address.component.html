@@ -1,0 +1,124 @@
+<mat-dialog-content class="mat-typography pl-0px pr-0 ">
+  <div class="cw-section ml-10px container">
+    <p class="page-title">{{titleName | translate}}</p>
+  </div>
+  <div class="row ">
+    <div class="col-sm-12 _mat-animation-noopable col-lg-12 col-xl-12 mt-3">
+      <div class="container cw-section mt-3 ml-10px">
+        <form [formGroup]="form">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.ALIAS' | translate}}" formControlName="alias">
+                    <mat-error *ngIf="form.get('alias')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.NOMBRE_PERSONA' | translate}}"
+                      formControlName="nombrePersona">
+                    <mat-error *ngIf="form.get('nombrePersona')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input min="0" type="number" matInput placeholder="{{'FORMS.LABELS.TELEFONO' | translate}}"
+                      formControlName="telefono">
+                    <mat-error *ngIf="form.get('telefono')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.CORREO' | translate}}"
+                      formControlName="correoElectronico">
+                    <mat-error *ngIf="form.get('correoElectronico')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class=" col-sm-12 col-md-12 col-lg-8 col-xl-3">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <mat-select formControlName="pais" placeholder="{{ 'FORMS.LABELS.PAIS' | translate }}">
+                      <mat-option *ngFor="let estados of arrayPaises" [value]="estados.id">
+                        {{estados.name}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="form.get('pais')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-3">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input type="number" min="0" matInput placeholder="{{'FORMS.LABELS.CODIGO_POSTAL' | translate}}"
+                      formControlName="codigoPostal">
+                    <mat-error *ngIf="form.get('codigoPostal')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-3">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.CIUDAD' | translate}}" formControlName="ciudad">
+                    <mat-error *ngIf="form.get('ciudad')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-3">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.ESTADO' | translate}}" formControlName="estado">
+                    <mat-error *ngIf="form.get('estado')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.CALLE_NUMERO' | translate}}"
+                      formControlName="calleNumero">
+                    <mat-error *ngIf="form.get('calleNumero')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.COLONIA' | translate}}" formControlName="colonia">
+                    <mat-error *ngIf="form.get('colonia')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+                  <mat-form-field appearance="outline" class="cw-mat-full-with">
+                    <input matInput placeholder="{{'FORMS.LABELS.REFERENCIA' | translate}}"
+                      formControlName="referencia">
+                    <mat-error *ngIf="form.get('referencia')?.hasError('required')">
+                      {{ 'LABELS.REQUIRED_FIELD' | translate}}</mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container mt-2rem ml-10px w-40 d-flex ">
+        <div class="w-50">
+          <button (click)="confirmOption(false)" class="w-60" mat-menu-item>
+            <mat-icon>keyboard_backspace</mat-icon><span>{{ 'BOTTON.BACK' | translate}}</span>
+          </button>
+        </div>
+        <div class="w-50 ">
+          <button *ngIf="!isEditActivate" class="btn-save btn ml-10px" mat-raised-button (click)="confirmOption(true)"
+            [disabled]="!form.valid || isLoading">
+            <mat-icon>save</mat-icon>
+            {{ 'BOTTON.SAVE' | translate}}
+          </button>
+          <button [disabled]="isLoading" *ngIf="isEditActivate" class="btn-save btn ml-10px" mat-raised-button
+            (click)="editActivate()">
+            {{ 'BOTTON.EDIT' | translate}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>

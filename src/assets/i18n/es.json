@@ -1,0 +1,62 @@
+{
+  "BOTTON": {
+    "BACK": "VOLVER",
+    "CANCEL": "Cancelar",
+    "DOWNLOAD_EXCEL": "Descargar excel",
+    "EDIT": "Editar",
+    "LOGIN": "Login",
+    "SAVE": "Guardar",
+    "SAVE_ADDRESS": " Agregar dirección",
+    "SEARCH": "Buscar"
+  },
+  "FORMS": {
+    "LABELS": {
+      "ALIAS": "Alias de la direccion",
+      "CALLE_NUMERO": "Calle y numero",
+      "CIUDAD": "Ciudad",
+      "CODIGO_POSTAL": "Codigo psotal",
+      "COLONIA": "Colonia",
+      "CORREO": "Correo electrónico",
+      "ESTADO": "Estado",
+      "FILTER": "Filtro",
+      "NOMBRE_PERSONA": "Nombre de la persona",
+      "PAIS": "Pais",
+      "REFERENCIA": "Referencia",
+      "TELEFONO": "Tefono"
+    }
+  },
+  "HEADER": {
+    "HOME": "Home"
+  },
+  "LABELS": {
+    "REQUIRED_FIELD": "Campo Requerido"
+  },
+  "MENU": {
+    "HOME": "Home",
+    "LOGOUT": "Logout",
+    "PERSON": "Perfil"
+  },
+  "TABLES": {
+    "COLUMN": {
+      "ACTIONS": "Acciones",
+      "ALIAS": "ALIAS",
+      "CALLE_NUMERO": "Calle y numero",
+      "CIUDAD": "Ciudad",
+      "COLONIA": "COLONIA",
+      "PAIS": "Pais",
+      "STATE": "Estado"
+    }
+  },
+  "TEXT_LOGIN": {
+    "SIGN_IN_GOOGLE": " Sign In with Google",
+    "WRONG_USER_PASSWORD": "Nombre de usuario o contraseña incorrecto. Por favor, intentelo nuevamente"
+  },
+  "TITLE": {
+    "ADDRESS": "DIRECCIONES",
+    "CHANGE_PASSWORD": "Cambiar contraseña",
+    "CREATE_ADDRESS": "Agregar dirección",
+    "EDIT_ADDRESS": "Editar dirección",
+    "USER": "Usuario",
+    "WELCOME": "Welcome"
+  }
+}

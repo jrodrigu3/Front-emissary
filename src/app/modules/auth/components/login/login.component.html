@@ -1,0 +1,30 @@
+<article class="card">
+  <div class="logo">
+
+  </div>
+  <div class="search__container">
+    <form [formGroup]="auth">
+      <mat-form-field class="input" appearance="outline">
+        <mat-label>{{ 'FORMS.LABELS.EMAIL' | translate }}</mat-label>
+        <input matInput formControlName="email" autocomplete="off" type="email" />
+      </mat-form-field>
+      <mat-form-field class="input login-input" appearance="outline" floatLabel='never'>
+        <mat-label>{{ 'FORMS.LABELS.PASSWORD' | translate }}</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" autocomplete="off" />
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="botton__container">
+    <div class="login-button-div">
+      <button mat-raised-button class="login-button-div btn-save" (click)="login()">
+        {{ 'BOTTON.LOGIN' | translate }}
+      </button>
+    </div>
+    <div class="google-btn">
+      <div class="google-icon-wrapper">
+        <img class="google-icon" src="../../../../../assets/icon/google_logo.svg" />
+      </div>
+      <p class="btn-text"><b>{{ 'TEXT_LOGIN.SIGN_IN_GOOGLE' | translate }}</b></p>
+    </div>
+  </div>
+</article>

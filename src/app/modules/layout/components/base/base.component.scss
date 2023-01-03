@@ -1,0 +1,16 @@
+.admin-main-container {
+    height: 100%;
+}
+
+.main-sidenavOpened {
+    width: 260px;
+}
+
+.main-sidenavClosed {
+    width: 101px;
+}
+
+::ng-deep .main-sidenav.mat-drawer {
+    background-color: unset;
+    border: unset;
+}

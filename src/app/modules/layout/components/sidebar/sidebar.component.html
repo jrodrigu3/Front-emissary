@@ -1,0 +1,47 @@
+<div class="sidemenu">
+  <div class="top">
+    <div class="d-flex justify-content-between">
+      <a class="mt-10px">
+        <figure>
+          <img src="../../../../../assets/img/Frame-65.png"
+            [ngClass]="{'sidebar-logo-imgOpened' : openCloseSideBar, 'sidebar-logo-imgClosed' : !openCloseSideBar}"
+            alt="profile icon">
+        </figure>
+      </a>
+      <div (click)="closeMenu()" [ngClass]="{'buttonOpend' : openCloseSideBar, 'buttonClosed' : !openCloseSideBar}">
+        <img [ngClass]="{'row__sidebarOpened' : openCloseSideBar , 'row__sidebarClosed' : !openCloseSideBar}"
+          src="../../../../../assets/icon/arrowR.svg" alt="">
+        <img [ngClass]="{'row__sidebarOpened' : openCloseSideBar, 'row__sidebarClosed' : !openCloseSideBar}"
+          src="../../../../../assets/icon/arrowR.svg" alt="">
+      </div>
+    </div>
+    <h3 *ngIf="openCloseSideBar" class="welcome-subtitle subtitle white">
+      {{'TITLE.WELCOME' | translate}}
+    </h3>
+    <mat-nav-list class="top-list">
+      <div *ngFor="let element of sidebar" class="parent-element subtitle white">
+        <div>
+          <div *ngIf="openCloseSideBar" class="menu-head">
+            <span>{{ element.name }}</span>
+          </div>
+          <div *ngFor="let child of element.childs" class="menu-item">
+            <button mat-button [ngClass]="{'menu-button' : openCloseSideBar, 'menu-butto-closed' : !openCloseSideBar}"
+              [routerLink]="child.link">
+              <mat-icon>{{child.icon}}</mat-icon>
+              <span *ngIf="openCloseSideBar">{{child.name}}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-nav-list>
+  </div>
+  <div class="bottom">
+    <mat-nav-list class="top-list">
+      <div class="parent-element logout">
+        <mat-list-item role="link">
+          <mat-icon class="buttonLogout">exit_to_app</mat-icon>
+        </mat-list-item>
+      </div>
+    </mat-nav-list>
+  </div>
+</div>

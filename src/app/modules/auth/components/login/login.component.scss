@@ -1,0 +1,136 @@
+.row.main-row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.search__container {
+    display: flex;
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.5rem;
+
+}
+
+.input {
+    margin-left: 10px;
+    max-width: 300px;
+    min-width: 290px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    max-width: 320px;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 13px;
+    background: #FFFFFF;
+
+
+
+    .login-button-div {
+        display: flex;
+        justify-content: center;
+        min-width: 280px;
+    }
+
+    .login-button {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .botton__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+        margin-top: -20px;
+    }
+}
+
+.logo {
+    width: 252.89px;
+    height: 72.93px;
+    left: 253.11px;
+    top: 358.06px;
+
+}
+
+.google-div {
+    height: 50%;
+}
+
+.google-icon {
+    width: 3.5rem;
+    margin-right: 0.5rem;
+}
+
+
+
+@media (min-width: 700px) {
+    .card {
+        position: absolute;
+        width: 468px;
+        height: 402px;
+        left: 145px;
+        top: 311px;
+
+        border-radius: 13px;
+    }
+}
+
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669F2;
+// 006EAA
+.google-btn {
+    margin-top: -67px;
+    width: 193px;
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+
+    .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+
+    .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .btn-text {
+        float: right;
+        margin: 11px 11px 0 0;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+
+    &:active {
+        background: $button-active-blue;
+    }
+}

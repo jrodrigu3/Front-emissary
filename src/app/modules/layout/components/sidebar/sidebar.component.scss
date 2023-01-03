@@ -1,0 +1,134 @@
+ .sidemenu {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+   overflow-y: none;
+   background-color: #5601AB;
+ }
+
+ .top {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .sidebar-logo-imgOpened {
+   width: 216px;
+   position: relative;
+   height: 60px;
+   margin-top: 1rem;
+ }
+
+ .buttonClosed {
+   position: absolute;
+   margin-left: 65px;
+   margin-top: 35px;
+   color: white;
+ }
+
+ .buttonOpend {
+   transform: rotate(180deg);
+   position: absolute;
+   margin-left: 198px;
+   margin-top: 85px;
+   color: white;
+ }
+
+ .row__sidebarOpened {
+   position: relative;
+   width: 11px;
+   color: white;
+ }
+
+ .row__sidebarClosed {
+   width: 7px;
+   height: 10px;
+ }
+
+ .sidebar-logo-imgClosed {
+   height: 24px;
+   width: 74px;
+   margin-top: 1rem;
+ }
+
+ .welcome-subtitle {
+   margin-bottom: 2rem;
+   text-align: center;
+ }
+
+ .subtitle.white {
+   color: #C4CFCE;
+ }
+
+ .top-list {
+   width: 100%;
+ }
+
+ .parent-element {
+   margin-bottom: 1rem;
+ }
+
+ .child-element {
+   margin: 3px 0;
+ }
+
+ .parent-element .subtitle {
+   padding: 0 1rem 0 1rem;
+   margin-bottom: 5px;
+ }
+
+ .sidemenu::-webkit-scrollbar {
+   display: none;
+ }
+
+ ::ng-deep .parent-element.logout .mat-list-item-content {
+   display: flex;
+   justify-content: center;
+ }
+
+ .menu-butto-closed {
+   margin-left: 10px;
+ }
+
+ .menu-item {
+   margin: 0 10px 0 10px;
+
+   .menu-button {
+     display: block;
+     width: 100%;
+     position: relative;
+     display: flex;
+     padding-left: 40px;
+     margin-bottom: 10px;
+
+   }
+
+   .menu-button span {
+     margin-left: 15px;
+     color: white;
+   }
+
+   .menu-button:hover {
+     background: #2c3344;
+   }
+
+   .menu-button:focus {
+     background: #2c3344;
+   }
+ }
+
+ .menu-head {
+   color: #def7f4;
+   text-transform: uppercase;
+   font-weight: 900;
+   margin-left: 40px;
+   margin-bottom: 20px;
+ }
+
+ .buttonLogout {
+   transform: rotate(180deg);
+   color: #C4CFCE;
+ }

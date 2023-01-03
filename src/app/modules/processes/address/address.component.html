@@ -1,0 +1,15 @@
+<div class="container-principal">
+  <div class="cw-section-main">
+    <div class="cw-section w-70">
+      <p class="page-title w-50">{{'TITLE.ADDRESS' | translate}}</p>
+      <div class="w-50 d-flex justify-content-end">
+        <button class="btn-save btn " (click)="abrirForm(0,'Crear')" mat-raised-button>
+          {{ 'BOTTON.SAVE_ADDRESS' | translate}}
+        </button>
+      </div>
+    </div>
+    <div class="admin-sidenav-content w-71">
+      <app-list-address> </app-list-address>
+    </div>
+  </div>
+</div>

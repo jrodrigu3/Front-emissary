@@ -1,0 +1,17 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 60%;
+    min-height: 60%;
+    background-image: url('../../../assets/img/login-background.svg');
+
+}
